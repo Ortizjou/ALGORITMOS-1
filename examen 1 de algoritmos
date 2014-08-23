@@ -1,0 +1,88 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+
+int transformar_a_base(int a, int b){
+int d=0,c=0;
+while(a>0){
+d=a%b;
+a=a/8;
+c=(c*10+d);
+}
+return(c);
+}
+float main(){
+float nro,base,B;
+cout<<"ingrese numero";
+cin>>nro;
+cout<<"ingrese base a la cual transformar";
+cin>>base;
+B=transformar_a_base(nro,base);
+cout<<endl<<B;
+getch();
+return(0);
+
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+
+using namespace std;
+
+int facypoten(int a){
+int s=2,c=1,i=1,n=0;
+while (a<=i){
+c=c+n;
+if(i%2==0){
+s=s+powf(i,c);
+}
+else{
+s=(s-powf(i,c))/c;
+}
+i=i++;
+n++;
+}
+return(s);
+}
+float main(){
+float nro,B;
+cout<<"ingrese numero";
+cin>>nro;
+B=facypoten(nro);
+cout<<B;
+getch();
+return(0);
+
+}
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+
+using namespace std;
+
+int facypoten(int a){
+int s=2,c=1,i=1,n=0;
+while (a<=i){
+c=c+n;
+if(i%2==0){
+s=s+powf(i,c);
+}
+else{
+s=(s-powf(i,c))/c;
+}
+i=i++;
+n++;
+}
+return(s);
+}
+float main(){
+float nro,B;
+cout<<"ingrese numero";
+cin>>nro;
+B=facypoten(nro);
+cout<<B;
+getch();
+return(0);
+
+}
+
